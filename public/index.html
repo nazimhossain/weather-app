@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wether App</title>
+   
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<div class="container-fluid">
+  <div class="row" id ="row">
+    <div class="col-6 d-flex" id="left">
+      <div class="align-self-center m-auto text-center">
+        <img id ="branding" src="./openweather.png" alt="Open Weather">
+        <h3>Open Weather API</h3>
+        <p>Enter Your City, | Check Your Weather Instantly</p>
+
+
+      </div>
+
+
+    </div>
+    <div class="col-6 d-flex" id ="right">
+      <div class="align-self-center m-auto text-center">
+        <img src="http://openweathermap.org/img/w/10d.png" alt="Scattered Cloud" id ="condition">
+        <p class="lead">
+          <strong><span id ="city">Dhaka</span>,<span id ="country">BD</span>
+          </strong> <br>
+          <strong><span id ="main">Cloud</span></strong>
+          (<span id ="description">Scattered Cloud</span>) <br>
+          Temp: <strong><span id ="temp">32</span></strong>
+          PRESSURE: <strong><span id ="pressure">10213</span></strong>
+          HUMIDITY: <strong><span id="humidity">75</span></strong>
+
+        </p>
+        <input type="text" id ="city-input" placeholder="Enter Your City Name" class="form-control">
+        <small class="form-text text-muted">
+          After Entering Valid City Name please Press Enter to get Result
+        </small>
+        <h5>Recently Search Result :</h5>
+        <div class="my-5" id ="history">
+
+        </div>
+        <div id="master-history" class ="card card-body my-2">
+          <div class="d-flex">
+            <div  >
+              <img src="https://openweathermap.org/img/w/03d.png" alt="Scattered Cloud" class="condition">
+
+            </div>
+            <div class="text-left">
+              <p>
+                <strong><span class="city">Dhaka</span>, <span class="country">BD
+
+                </span>
+                </strong> <br>
+                <strong><span class="main">Cloud</span></strong>
+                (<span class ="description">Scattered Cloud</span>) <br>
+                Temp: <strong><span class ="temp">32</span></strong>
+                PRESSURE: <strong><span class ="pressure">10213</span></strong>
+                HUMIDITY: <strong><span class="humidity">75</span></strong>
+
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="./app.js"></script>
+
+
+</body>
+</html>
